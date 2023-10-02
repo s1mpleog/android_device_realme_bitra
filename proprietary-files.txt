@@ -56,10 +56,12 @@ odm/etc/camera/config/camera_unit_config
 odm/etc/camera/config/camera_unit_feature_config.protobuf
 odm/etc/camera/config/hi846
 odm/etc/camera/config/imx471
+odm/etc/camera/config/oplus_camera_algo_switch_config
 odm/etc/camera/config/oplus_camera_aps_config
 odm/etc/camera/config/oplus_camera_config
 odm/etc/camera/config/ov02b
 odm/etc/camera/config/s5kgw1
+odm/etc/camera/config/video_beauty_default_config
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/camera_engmode.xml
 odm/etc/camera/settings_fdc.txt
@@ -70,11 +72,11 @@ odm/lib64/camera/com.qti.sensor.s5kgw1.so
 odm/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
 odm/lib64/camera/com.qti.sensormodule.shine_ov02b.bin
 odm/lib64/camera/com.qti.sensormodule.truly_hi846.bin
-odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin
 odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5kgw1.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
-odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
 
 # Charger
 odm/firmware/fastchg/20161/oplus_vooc_fw_rt5125.bin
