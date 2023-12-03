@@ -21,7 +21,7 @@ $(call inherit-product, device/realme/sm8250-common/common.mk)
 $(call inherit-product, vendor/realme/bitra/bitra-vendor.mk)
 
 # API
-PRODUCT_SHIPPING_API_LEVEL := 32
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Audio
 TARGET_HAS_AUDIO_LVIMFS := true

@@ -21,19 +21,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common blaze stuff.
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# Inherit Basic Call Recorder (For Project Blaze A14)
+$(call inherit-product, vendor/bcr/bcr.mk)
 
-# Blaze Bringup
+
+# Project Blaze Maintainer
 BLAZE_BUILD_TYPE := OFFICIAL
 BLAZE_MAINTAINER := OMKAR-PARTE
+
+# Common Flag
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_USE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# GMS Flags
 TARGET_GAPPS_ARCH := arm64
 WITH_GAPPS := true
+TARGET_INCLUDES_SOUND_AMPLIFIER := false
+TARGET_INCLUDES_ARCORE := false
+TARGET_INCLUDES_GOOGLE_WELLBEING := false
+TARGET_REPLACE_GOOGLE_CLOCK := true
 
 
 # Inherit from device
