@@ -17,6 +17,7 @@
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/realme/sm8250-common/common.mk)
 
+
 # Inherit proprietary libraries
 $(call inherit-product, vendor/realme/bitra/bitra-vendor.mk)
 
