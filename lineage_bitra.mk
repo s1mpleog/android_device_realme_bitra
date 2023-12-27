@@ -18,40 +18,30 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common blaze stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
-
-# Inherit Basic Call Recorder (For Project Blaze A14)
-$(call inherit-product, vendor/bcr/bcr.mk)
+# Inherit some common matrixx stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # ViPER4Android FX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Project Blaze Maintainer
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := OMKAR-PARTE
-
 # Common Flag
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_BLUR := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# GMS Flags
-TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
-TARGET_INCLUDES_SOUND_AMPLIFIER := false
-TARGET_INCLUDES_ARCORE := false
-TARGET_INCLUDES_GOOGLE_WELLBEING := false
-TARGET_REPLACE_GOOGLE_CLOCK := true
+#matrixx stuff
+MATRIXX_CHIPSET := SM8250
+MATRIXX_BATTERY := 5000mah
+MATRIXX_DISPLAY := 1080x2400
+TARGET_HAS_UDFPS := true
+MATRIXX_MAINTAINER=Simple_OG
 
+# GMS Flags
+WITH_GAPPS := true
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := blaze_bitra
+PRODUCT_NAME := lineage_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370
