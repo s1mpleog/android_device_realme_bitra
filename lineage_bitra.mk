@@ -35,7 +35,7 @@ TARGET_HAS_UDFPS := true
 MATRIXX_MAINTAINER=Simple_OG
 
 # GMS Flags
-WITH_GAPPS := true
+WITH_GMS := true
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
